@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Navbar */
+.top-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 1em 2em;
+    border-bottom: 1px solid #ccc;
+}
+
+.top-navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.top-navbar input[type="text"] {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.top-navbar .top-links a {
+    margin-left: 1em;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#home {
+    background-image: url('asset/bck1.jpeg'); /* Replace with the actual path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    color: whitesmoke; /* Makes text readable if background is dark */
+    padding: 5em 2em; /* Adds padding for better spacing */
+}
+
+.art-categories {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+.category {
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 0.5em;
+    padding-bottom: 1em;
+}
+
+.scroll-container img {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 10px;
+    max-width: 80%; /* Batasi lebar kontainer agar tidak full screen */
+    margin: 0 auto; /* Rata tengah kontainer */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+
+.category {
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 0.5em;
+}
+
+
+.category-menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+    padding: 1em;
+    border-bottom: 1px solid #ccc;
+}
+
+.category-menu a {
+    display: flex;
+    color: #333;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.category-menu a:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-row{
+    border: #1e1e1e;
+}
+
+/* Main Content */
+.span12 {
+    text-align: center;
+.gallery-hover-6col {width:140px; height:114px;}
+.gallery-hover-4col {width:220px; height:180px;}
+.gallery-hover-3col {width:300px; height:243px;}
+.gallery-hover-4col-cir {width:220px; height:220px;}
+.gallery-hover-4col-cir .gallery-icons {top: 42%; left:29%;}
+}
+
+li.span4 .project-details {
+	-o-text-overflow: ellipsis;
+    text-overflow:    ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+    width: 280px;
+	}
+li.span3 .project-details {
+    -o-text-overflow: ellipsis;
+    text-overflow:    ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+    width: 200px;
+	}
+li.span2 .project-details {
+    -o-text-overflow: ellipsis;
+    text-overflow:    ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+    width: 120px;
+	}
+
+.section {
+    padding: 2em;
+    text-align: center;
+    border: ;
+}
+
+
+.featured-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.art-piece {
+    background-color: #e8e8e8;
+    padding: 2em;
+    width: 100px;
+    height: 150px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.contact-form button {
+    padding: 0.5em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.Artprints-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.Artprints-item {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+}
+
+.Artprints-item img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .top-navbar, .category-menu {
+        flex-direction: column;
+    }
+
+    .featured-gallery {
+        flex-direction: column;
+    }
+}
+
